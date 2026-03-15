@@ -1,39 +1,175 @@
-## About the Electric Vehicle Population Report
+# ⚡ Electric Vehicle Range Prediction (Machine Learning)
 
-This project analyzes Electric Vehicle population data for Washington USA.  
-The report covers the following:
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange)
+![Status](https://img.shields.io/badge/Project-Complete-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-### 1. Data Sources
-The dataset includes:
-- Vehicle type distribution
-- Electric range
-- Model year spread
-- County-wise EV adoption
+A machine learning project that predicts the **electric driving range of electric vehicles (EVs)** using vehicle characteristics such as model year, vehicle type, manufacturer, and price.
 
-### 2. Key Insights
-- Growth trend of EV registrations over recent years
-- Comparison between BEV and PHEV models
-- Counties with the highest EV penetration
-- Popular manufacturers and models
+The project demonstrates a **complete ML pipeline including data preprocessing, feature engineering, model training, evaluation, and model interpretability.**
 
-### 3. Visualizations
-The PowerPoint and PDF report include:
-- Bar charts for EV counts by make and model
-- Line charts showing adoption trends
-- Geographic distribution of EVs
-- Pie charts for EV type breakdown
+---
 
-### 4. Files in This Repository
-- **E.V. Population Certificate.pdf**  
-- **E.V. Population PowerPoint Presentation.pptx**  
-- **E.V. Population Report.pdf**  
-- **Readme.md**
+# 📊 Project Overview
 
-### 5. Tools Used
-- Microsoft Excel for preprocessing  
-- Python for cleaning and exploratory analysis  
-- PowerPoint for visualization and presentation design  
+Electric vehicles vary significantly in driving range depending on **technology improvements, manufacturer design, and vehicle type**.
 
-### 6. Author
-Created by **Aman Sinha**  
-Data Analytics Project on Electric Vehicle Population in Washington USA.
+This project builds a **Random Forest regression model** to predict EV range based on key vehicle attributes.
+
+The model also analyzes **feature importance** to determine which factors most influence EV performance.
+
+---
+
+# 🧠 Machine Learning Workflow
+
+The project follows a standard ML pipeline:
+
+1. Data Cleaning
+2. Feature Engineering
+3. Categorical Encoding
+4. Train/Test Split
+5. Model Training
+6. Model Evaluation
+7. Model Interpretability
+
+---
+
+# 📁 Dataset Features
+
+The dataset contains information about electric vehicles including:
+
+| Feature               | Description                         |
+| --------------------- | ----------------------------------- |
+| Model Year            | Manufacturing year of the vehicle   |
+| Electric Vehicle Type | BEV or Plug-in Hybrid               |
+| Make                  | Manufacturer (Tesla, Nissan, etc.)  |
+| Base MSRP             | Manufacturer suggested retail price |
+| Electric Range        | Driving range on electric power     |
+
+**Target Variable**
+
+```
+Electric Range
+```
+
+---
+
+# ⚙️ Model Used
+
+### Random Forest Regressor
+
+Random Forest was chosen because it:
+
+* Handles **non-linear relationships**
+* Works well on **tabular datasets**
+* Provides **feature importance for interpretability**
+
+Model configuration:
+
+```python
+RandomForestRegressor(
+    n_estimators=200,
+    random_state=42
+)
+```
+
+---
+
+# 📈 Model Performance
+
+Evaluation metrics used:
+
+| Metric   | Value    |
+| -------- | -------- |
+| RMSE     | ~7 miles |
+| R² Score | ~0.99    |
+
+The model explains **~99% of the variance in EV range**, indicating strong predictive performance on the dataset.
+
+---
+
+# 🔍 Feature Importance
+
+The model highlights which variables most influence EV range.
+
+Top contributors include:
+
+* **Model Year**
+* **Electric Vehicle Type**
+* **Manufacturer**
+
+This shows that **technological advancements and vehicle design play a major role in EV driving range.**
+
+---
+
+# 📊 Feature Importance Visualization
+
+The project includes a visualization of the top features influencing electric vehicle range.
+
+This helps interpret how the machine learning model makes predictions.
+
+---
+
+# 🛠 Technologies Used
+
+* **Python**
+* **Pandas**
+* **NumPy**
+* **Scikit-Learn**
+* **Matplotlib**
+* **Jupyter Notebook**
+
+---
+
+# 📂 Project Structure
+
+```
+Electric-Vehicle-Range-Prediction
+│
+├── Electric Vehicle Population.ipynb
+├── dataset.csv
+├── README.md
+```
+
+---
+
+# 🚀 Running the Project
+
+Clone the repository:
+
+```
+git clone https://github.com/EzioAman/electric-vehicle-range-prediction.git
+```
+
+Install dependencies:
+
+```
+pip install pandas numpy scikit-learn matplotlib
+```
+
+Run Jupyter Notebook:
+
+```
+jupyter notebook
+```
+
+Open the notebook and run all cells.
+
+---
+
+# 📌 Key Takeaways
+
+✔ Built a full machine learning pipeline
+✔ Applied categorical encoding for vehicle features
+✔ Trained a Random Forest regression model
+✔ Evaluated model performance using RMSE and R²
+✔ Interpreted results using feature importance
+
+---
+
+# 👤 Author
+
+**Aman Sinha**
+
+GitHub: https://github.com/EzioAman
