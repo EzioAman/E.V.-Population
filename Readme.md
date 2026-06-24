@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/Project-Complete-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-**I worked on an Electric Vehicle dataset where I performed data cleaning, preprocessing, exploratory data analysis, visualization, and reporting. The objective was to answer business questions related to EV adoption, vehicle popularity, manufacturer trends, and regional insights. I also explored machine learning techniques to generate predictive insights from the dataset.**
+**I worked on an Electric Vehicle dataset where I performed data cleaning, preprocessing, exploratory data analysis, visualization, and reporting. The objective was to answer business questions related to:- assess market penetration, predict future growth trends, and identify key factors driving market expansion. I also explored machine learning techniques to generate predictive insights from the dataset.**
 
 A machine learning project that predicts the **electric driving range of electric vehicles (EVs)** using vehicle characteristics such as model year, vehicle type, manufacturer, and price.
 
