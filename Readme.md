@@ -5,9 +5,9 @@
 ![Status](https://img.shields.io/badge/Project-Complete-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-A machine learning project that predicts the **electric driving range of electric vehicles (EVs)** using vehicle characteristics such as model year, vehicle type, manufacturer, and price.
+**I worked on an Electric Vehicle dataset where I performed data cleaning, preprocessing, exploratory data analysis, visualization, and reporting. The objective was to answer business questions related to EV adoption, vehicle popularity, manufacturer trends, and regional insights. I also explored machine learning techniques to generate predictive insights from the dataset.**
 
-The project demonstrates a **complete ML pipeline including data preprocessing, feature engineering, model training, evaluation, and model interpretability.**
+A machine learning project that predicts the **electric driving range of electric vehicles (EVs)** using vehicle characteristics such as model year, vehicle type, manufacturer, and price.
 
 ---
 
